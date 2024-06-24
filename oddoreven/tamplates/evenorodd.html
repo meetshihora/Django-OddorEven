@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd</title>
+</head>
+<body>
+    <h1>check if your number is even or odd</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="number">
+        <input type="submit" value="check">
+    </form>
+    <p>{{result}}</p>
+</body>
+</html>
